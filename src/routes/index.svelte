@@ -7,12 +7,12 @@
 
   <p>
     We have a 5MB json file containing a list of french cities, and our goal is
-    to import it from a server-side empoint to count the number of lines.
+    to import it from a server-side endpoint to count the number of lines.
   </p>
   <p>
-    The problem is that the naïve `import 'data.json'` is taking way more time
-    that expected. (this is demonstrable with the “call es-import” button
-    below). It delay is only visible the first first time, since the data is
+    The problem is that the naïve `import 'data.json'` on the server is taking
+    way more time that expected. (this is demonstrable with the “call es-import”
+    button below). The delay is only visible the first time, since the data is
     already loaded on following calls. To reproduce it again you have to kill
     the app and relaunch it.
   </p>

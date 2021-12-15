@@ -1,9 +1,7 @@
 import fs from "fs";
 
 // Weirdly, using a `JSON.parse` and `fs.readFileSync` is 50x faster than the `import` syntax.
-const communes = loadJsonFile(
-  "node_modules/@etalab/decoupage-administratif/data/communes.json"
-);
+const communes = loadJsonFile("src/communes.json");
 
 function loadJsonFile(path) {
   const absolutePath = new URL("../../../" + path, import.meta.url).pathname;
