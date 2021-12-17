@@ -1,5 +1,7 @@
 # Loading problem reproduction
 
+https://github.com/vitejs/vite/issues/6154
+
 ```sh
 npm install
 ```
