@@ -3,6 +3,8 @@
   // time taken, and a minimal UI to display the result.
   export let method;
 
+  const endPointUrl = `/api/${method}-communes`;
+
   let timeTaken,
     response,
     disabled = false;
@@ -10,7 +12,7 @@
   const loadAndMeasureTime = async () => {
     disabled = true;
     let start = performance.now();
-    let res = await fetch(`/api/${method}-communes`);
+    let res = await fetch(endPointUrl);
     response = await res.text();
     let end = performance.now();
     timeTaken = end - start;
